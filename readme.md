@@ -20,3 +20,6 @@ I'm using Terraform config file & Terraform syntax to create resources, data sou
 * *5-* Deploy nginx docker container
 * *6-* create security group (firewall)
 * *7-* open ports to allow ssh 
+
+
+Note: Using provisioners isn't advised. Use tools like ansible, chef or puppet instead
