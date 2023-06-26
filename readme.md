@@ -11,4 +11,16 @@
 ##### 7. configure auto-scaling 
 ##### 8. deploy application to EKS cluster
 
+
+### Next Steps
+
+### Update Kubeconfig (/Users/username/.kube/config) gets updated
     aws eks update-kubeconfig --name myapp-eks-cluster --region eu-west-2
+
+#### to get a list of deployed nodes from aws 
+
+    kubectl get pod
+
+#### apply nginx-config.yaml 
+
+    kubectl apply -f nginx-config.yaml
