@@ -2,9 +2,9 @@
 .terraform/*
 
 #tf state files
-statefiles/*
-# *.tfstate
-# *.tfstate.*
+
+*.tfstate
+*.tfstate.*
 
 #tf variable files, may include sensitive data
 *.tfvars

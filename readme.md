@@ -1,22 +1,14 @@
-# automate provisioing ec2 with terraform 
+# automate provisioing eks with terraform 
 
-## overview
-I'm using Terraform config file & Terraform syntax to create resources, data sources and variables
+## steps
 
-* Provision an ec2 instance on AWS infrastructure
-* Run nginx docker container on ec2 instance
+##### 1. Create EKS IAM role on AWS and link to  prject using "aws configure"
+##### 2. create VPC for worker nodes
+##### 3. create EKS cluster (master nodes)
+##### 4. connect kubectl with the EKS cluster
+##### 5. connect EC2 IAM role for the node group
+##### 6. create node group and attachto the EKS cluster
+##### 7. configure auto-scaling 
+##### 8. deploy application to EKS cluster
 
-### Prequisite before creating the ec2 instance
-
-* Provision AWS infrastructure first. 
-
-* *1-* create custom VPC
-* *2-* create custome Subnet
-* *3-* create route table & internet gateway
-
-### After these infrastructures have been provisioned. 
-
-* *4-* Provision EC2 instance
-* *5-* Deploy nginx docker container
-* *6-* create security group (firewall)
-* *7-* open ports to allow ssh 
+    aws eks update-kubeconfig --name myapp-eks-cluster --region eu-west-2
